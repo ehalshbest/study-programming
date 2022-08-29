@@ -1,4 +1,5 @@
 .vs
+.vscode
 
 /golang/bin
 /golang/pkg

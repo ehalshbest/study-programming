@@ -62,34 +62,34 @@
      }
     ``` 
   - 짧은 선언(전역 사용X, 선언 후 할당 예외 발생, 주로 함수 내에서 사용) : 변수명 := 초기화
-  ```go
-   package main
+   ```go
+    package main
 
-   import "fmt"
+    import "fmt"
 
-   func main(){
+    func main(){
 
-    // 짧은 선언
-    shortVar1 := 3
-    shortVar2 := "Test"
-    shortVar3 := false
+      // 짧은 선언
+      shortVar1 := 3
+      shortVar2 := "Test"
+      shortVar3 := false
 
-    fmt.Println("shortVar1 : ", shortVar1, "shortVar2 : ", shortVar2, "isRun : ", shortVar3)
+      fmt.Println("shortVar1 : ", shortVar1, "shortVar2 : ", shortVar2, "isRun : ", shortVar3)
 
-    shortVar1 := 10 // 선언 후 할당 예외 발생.(no new variables on left side of :=)
+      shortVar1 := 10 // 선언 후 할당 예외 발생.(no new variables on left side of :=)
 
-    // 짧은 선언 사용 예
-    if i := 0; i < 10 {
-      fmt.Println("Short Variable Test Success!!")
+      // 짧은 선언 사용 예
+      if i := 0; i < 10 {
+        fmt.Println("Short Variable Test Success!!")
+      }
+
+      // 짧은 선언 사용 예
+      for i := 0; i < 5; i++ {
+	     fmt.Println("i : ", i)
+	   }
+
     }
-
-    // 짧은 선언 사용 예
-    for i := 0; i < 5; i++ {
-	    fmt.Println("i : ", i)
-	  }
-
-   }
-  ``` 
+   ``` 
 
 * ___상수___
   - 상수 선언 : const 상수명 [자료형] = 초기화

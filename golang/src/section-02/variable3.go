@@ -19,4 +19,7 @@ func main() {
 	if i := 10; i < 11 {
 		fmt.Println("Short Variable Test Success!!")
 	}
+	for i := 0; i < 10; i++ {
+		fmt.Println("i : ", i)
+	}
 }

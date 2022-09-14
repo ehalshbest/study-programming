@@ -9,15 +9,13 @@ func main() {
 	const a string = "Test1"
 	const b = "Test2"
 	const c int32 = 10 * 10
-	// const d = getHeight()
+	//const d = getHeight()
 	const e = 35.6
 	const f = false
 
-	/*
-		에러 발생
-		const g string
-		g = "Test3"
-	*/
+	//에러 발생
+	const g string = "aa"
+	g = "Test3"
 
 	fmt.Println("a :", a, "b :", b, "c :", c, "e :", e, "f :", f)
 }

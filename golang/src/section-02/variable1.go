@@ -17,7 +17,7 @@ func main() {
 	var l = "Hi Seoul!"
 	var m = true
 
-	fmt.Println("a : ", a)
+	//fmt.Println("a : ", a)
 	fmt.Println("b : ", b)
 	fmt.Println("c : ", c)
 	fmt.Println("d : ", d)

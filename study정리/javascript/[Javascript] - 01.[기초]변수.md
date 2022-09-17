@@ -1,4 +1,4 @@
-# [Javascript 기초] - 01.변수
+# [Javascript] - 01.[기초]변수
 
 * ___Javascript 공부를 위한 도구___
   - codepen.io 

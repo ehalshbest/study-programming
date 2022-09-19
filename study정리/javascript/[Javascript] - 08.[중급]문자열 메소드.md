@@ -48,6 +48,10 @@
   let desc = "Good!";
   console.log(desc.repeat(3)); // "Good!Good!Good!"
 
+  //split(구분자) : 문자열을 나눠서 배열로 반환.
+  let desc = "Good Nice";
+  console.log(desc.split(' ')); // ['Good', 'Nice']
+
   // 문자열 비교 "a" < "c" : 아스키코드같으호 비교  
 
   // 아스키코드 확인

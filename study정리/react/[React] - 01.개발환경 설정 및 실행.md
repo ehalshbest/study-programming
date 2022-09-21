@@ -56,6 +56,8 @@
      - jsx 를 반환하는 Component 파일은 -> tsx 파일로 변환 혹 생성 사용.
      - 일반 js 파일은  -> ts 파일로 변환 혹 생성 사용.
      
+    - create-react-app 생성시 적용.
+       > npx create-react-app [프로젝트명] --template typescript  
 
 
   4. __React 간략 설명__
@@ -88,3 +90,27 @@
       );
       // public/index.html의 root div 밑으로 App이 Rander된다.
       ```
+    - react-router-dom 사용.
+      - BrowserRouter, Routes, Route, Link, useNavigate 사용을 위해서  
+      - > npm install react-router-dom  
+        ```javascript
+        function App() {
+          return (
+            <>
+             <BrowserRouter>
+                <Header />
+               <Routes>
+                  <Route path="/" element={<컴포넌트 />} />
+                  // path에 값을 넣은때 /:변수명
+                  <Route path="/day/:day" element={<컴포넌트 />} />
+                  // "/*" 는 나머지 path, 즉 없는 path 를 처리할때 사용.
+                  <Route path="/*" element={<EmptyPage />} />
+                </Routes>
+              </BrowserRouter>
+          </>
+          );
+        } 
+
+        export default App;
+        ```
+    

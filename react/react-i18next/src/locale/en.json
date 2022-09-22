@@ -1,0 +1,14 @@
+{
+  "Welcome" : "Welcome."
+  ,
+  "AAA" : {
+    "Welcome" : "AAA_Welcome.",
+    "Hello" : "AAA_Hello?",
+    "Hello_A" : "AAA_HelloA?"
+    ,
+    "BBB" : {
+      "Welcome" : "BBB_Hello.",
+      "Hello" : "BBB_Hello?"
+    }
+  }
+}

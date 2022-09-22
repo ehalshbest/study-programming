@@ -1,0 +1,13 @@
+{
+  "Welcome" : "환영합니다."
+  ,
+  "AAA" : {
+    "Welcome" : "AAA_환영합니다.",
+    "Hello" : "BBB_안녕?",
+    "Hello_A" : "BBB_안녕A?",
+    "BBB" : {
+      "Welcome" : "BBB_환영합니다.",
+      "Hello" : "BBB_안녕?"
+    }
+  }
+}

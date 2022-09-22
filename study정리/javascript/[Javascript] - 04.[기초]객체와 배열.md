@@ -93,26 +93,26 @@
     console.log(arr[4]);
     ``` 
     - 배열 조작
-    ```javascript
-    let days = ['월', '화', '수'];
-    console.log(days);
+      ```javascript
+      let days = ['월', '화', '수'];
+      console.log(days);
 
-    days[1] = 'tue'
-    console.log(days);
+      days[1] = 'tue'
+      console.log(days);
 
-    console.log(days.length); // 개열의 길이, 배열이 가지고 있는 요소의 개수 반환.
+      console.log(days.length); // 개열의 길이, 배열이 가지고 있는 요소의 개수 반환.
 
-    days.push('목');  // 요소를 뒤에서 부터 추가한다.
-    console.log(days);
+      days.push('목');  // 요소를 뒤에서 부터 추가한다.
+      console.log(days);
 
-    days.unshift('일'); // 요소를 앞에서 부터 추가한다.
-    console.log(days);
+      days.unshift('일'); // 요소를 앞에서 부터 추가한다.
+      console.log(days);
 
-    days.pop(); // 요소를 뒤에서 부터 꺼낸다.
-    console.log(days);
+      days.pop(); // 요소를 뒤에서 부터 꺼낸다.
+      console.log(days);
 
-    days.shift(); // 요소를 앞에서 부터 꺼낸다.
-    console.log(days);
-    ``` 
+      days.shift(); // 요소를 앞에서 부터 꺼낸다.
+      console.log(days);
+      ``` 
 
 

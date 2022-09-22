@@ -100,20 +100,20 @@
   - Closer를 활용.
     - 객체의 설정값(property)을 아무때나 바꿀수 있다.
     - readonly 처리.
-    ```javascript
-    const Bmw = function(color) {
-	    this.color = color;
-    }
-    const x5 = new Bmw("red");
-    x5.color = "black"; // 값을 바꿀 수 있다.
+      ```javascript
+      const Bmw = function(color) {
+	      this.color = color;
+      }
+      const x5 = new Bmw("red");
+      x5.color = "black"; // 값을 바꿀 수 있다.
 
-    const Bmw = function(color) {
-	    const c = color;
-	    this.getColor = function() { // closer 활용
-		    console.log(c);
-	    };
-    };
+      const Bmw = function(color) {
+	      const c = color;
+	      this.getColor = function() { // closer 활용
+		      console.log(c);
+	      };
+      };
 
-    const x5 = new Bmw("red");
-    x5.getColor(); // readonly 만 가능함.
-    ```
+      const x5 = new Bmw("red");
+      x5.getColor(); // readonly 만 가능함.
+      ```

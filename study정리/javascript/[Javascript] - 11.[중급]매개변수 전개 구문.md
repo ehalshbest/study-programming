@@ -3,15 +3,15 @@
 * ___매개변수___
   - 인수 전달
     - JavaScript는 인수 전달시 매개변수 개수를 지킬 필요가 없다.
-    ```javascript
-    function showName(name) {
-	    console.log(name);
-    }
+      ```javascript
+      function showName(name) {
+  	    console.log(name);
+      }
 
-    showName(); // undefined
-    showName('금'); // "금"
-    showName('금', '빛'); // "금", 2번째 인수는 무시됨.
-    ```
+      showName(); // undefined
+      showName('금'); // "금"
+      showName('금', '빛'); // "금", 2번째 인수는 무시됨.
+      ```
 
   - arguments
     - 함수로 넘어온 모든 인수에 접근 가능
@@ -32,25 +32,25 @@
     - ...매개변수이름(...names) 형태로 사용
     - 인자로 넘어온 파라미터를 배열로 받을 수 있다.
     - 매개변수의 가장 마지막에 위치해야 한다.
-     ```javascript
-    function showName(...names) {
-	    console.log(names);
-    }
+      ```javascript
+      function showName(...names) {
+	      console.log(names);
+      }
 
-    showName(); // [] 빈 배열
-    showName('금'); // ['금']
-    showName('금', '빛'); //  ['금', '빛']
+      showName(); // [] 빈 배열
+      showName('금'); // ['금']
+      showName('금', '빛'); //  ['금', '빛']
 
-    // 예) 전달된 모든 수를 더하자
-    function add(...numbers) {
-	    let result = 0;
-	    numbers.forEach((num) => (result+=num));
-	    //let result = numbers.reduce((prev, cur)=> prev + cur);
-	    console.log(result);
-    }
+      // 예) 전달된 모든 수를 더하자
+      function add(...numbers) {
+	      let result = 0;
+	      numbers.forEach((num) => (result+=num));
+	      //let result = numbers.reduce((prev, cur)=> prev + cur);
+	      console.log(result);
+      }
 
-    add(1,2,3,4,5,6,7,8,9,10); // 55
-    ```
+      add(1,2,3,4,5,6,7,8,9,10); // 55
+      ```
 
 * ___전개 구문(Spread syntax)___
   - 배열

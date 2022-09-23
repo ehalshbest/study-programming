@@ -1,0 +1,13 @@
+{
+  "SelectLocale.언어_변경": "Change language",
+  "SelectLocale.한국어": "Korean",
+  "SelectLocale.영어": "English",
+  "SelectLocale.중국어": "Chinese",
+  "Welcome.선택된_언어": "Selected language",
+  "Welcome.환영_합니다": "Welcome {{obj}}.",
+  "Welcome.오늘_날짜": "Today",
+  "Welcome.추가_내용2": "[작성 필요]",
+  "Welcome.추가_내용3": "",
+  "Welcome.추가_내용1": "[작성 필요]",
+  "Welcome.추가_내용": "[작성 필요]"
+}

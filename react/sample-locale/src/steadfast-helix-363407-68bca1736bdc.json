@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "steadfast-helix-363407",
+  "private_key_id": "68bca1736bdc4f06931f0b9640792785631b70b0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyMZAavddnAcqG\nkSFwxERWO6qlgK1mlwfAMnTRKD+bCvcU82ulb3PZqfBdsSDydmgMJPkMbdnNHMB6\n4HZNcTzuVUFWOvqq/6ujuf/MklCsjE5iwC1rpnuL18XAWHnFmL1Z1mlKs2F5ZJPD\nPGZb1xtRYEWkQKkGBGr9iNoGOpfHk3JNDhmxlWMFL/KaiOLu1BXkkBD/D4mtoiEX\nIl8kl22QZTwTocVgnHnGw3+7SC0Q2yvfuZ74g+85ZgccPjlUa4RemTP2lUXEEYDd\n69cG+tmpFD9vNSZYnI0zv35tpkYQE649yQ/i72samoaACq2y0goRERiQXqYecWfY\nZ0tFAs2zAgMBAAECggEAKJdzvTO7qsJUsTzEQlzjOEWVROhAF9uVr2mPBMpHWvkv\neb1NqzztRgsZLy6XU8Q3RXTyqqsnbzr6ecNCD7gY6i3PmWYMDgH5xm0rYR1/dR7t\nCD/A2QHuqNd5O6yr6KA3mgxmpdahALcxlcrfglJI7cuhcZ4tIqrE+IZBLCQSySpi\nMDvy6AIGQtMDNPJhLfwi91iidG268Yn/TT6YhWgEaBm5XAZSHVLaNTnrvLrnvfP7\nlJcYnr61xeCiO9C/rGIXnDHcSsC9TIX6LYdVNVX4R9hvRMj0nY5gwpXgfG+Cpg3V\n+dV/YtFuaPgsqZ4Fq8CjQ5Z7/fMCGmo6+ktOV6rCMQKBgQD0cmbwurhvK8cnTFfV\nG5Oc/zyoD8h/dVHWLIHgfE1h7TVbsdNDKzoHiJ+In9dOdZbCzgtrXPgnbq8NePq6\nGMdowTnPcM+fN0NhUX7HLmOAnlH8rJ5er5LD1+twX4s7D9KwuNnKi9MKTN1KYdeE\nzSckhooLIn90BQYCuQQCNDHFuQKBgQC6nY2J6zzxBb+7rzidMSXgdd8rDAxjUMR4\n0S5qC6+dgxWDK7XzVsE6+VLzcYvaJoeNXHe8iShqwTma/bxl4t7obGy1S6Pv4wUN\niN4fQCBzieFu/2z3da46liMfUU7cvl0T9E08ugXOxA7L1mhC+5yLKw1/qR4cNh6I\nHMJkviUkywKBgH2zmrXt/svEQlw2CPCghq70HZf6zcqlZNjy+DKdGRnjZk3pys6+\nms+m9QrHz2scUtOIKx0hqMZ2R3RxItWxylFXE8hVpZ6lR3Py+XOpqidIwrZheesM\n9DbbgMm/iBRuFZUk6XIbpwGj9yO53p7+9EL3IGOLcOkTcDzUMXiEqJeZAoGAcezH\nQKBsltOkpmalEEm1zt8Gu9fiJCtllkBVroWt02H4GxjvPjwDQQZ+noH+F9KXxDPk\nISQ2mV2W1kj639RtssSmZNNlpIgaSJX6zGcwqHhPOJ0Un8mm8LtBe9f+ZgKM/iaR\nlHYYH49PXR9qjSHgApHo7ruG10AuyXeNMUVnlZsCgYEAvNlBSKppd54w3YOMDbeV\n3bC5ImN62nuegw2DSmNnLoySTpELT0xZ8o26f4o42fPu7buaIpRNST8F5z0sbkQT\ng+lc2UDzrtNbebfKlVJbx220vyrP4Bf7U9Kl5rhCYURflobNMVHy+q5JZnkRpSk6\nhM5yeJIAjvOCIJEQs4jTfMk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "id-692@steadfast-helix-363407.iam.gserviceaccount.com",
+  "client_id": "106126796143103658895",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/id-692%40steadfast-helix-363407.iam.gserviceaccount.com"
+}

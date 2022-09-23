@@ -66,21 +66,21 @@
       5. FormattedDate 사용.
          > \<FormattedDate value={}>  
           ```javascript
-          import { FormattedMessage, FormattedDate } from "react-intl";
+           import { FormattedMessage, FormattedDate } from "react-intl";
 
-          function Welcome() {
-            const date: Date = new Date();
+           function Welcome() {
+             const date: Date = new Date();
 
-            return (
-              <div className="welcome">
-              <h1> <FormattedMessage id="Welcome" />React! </h1>
-              <FormattedDate value={date} />
-              </div>
-            );
-          }
+             return (
+               <div className="welcome">
+               <h1> <FormattedMessage id="Welcome" />React! </h1>
+               <FormattedDate value={date} />
+               </div>
+             );
+           }
 
-          export default Welcome;
-          ```
+           export default Welcome;
+           ```
 
 * ___React i18next로 다국어 지원하기___
   1. __React i18next 설치__
@@ -176,6 +176,18 @@
 
      export default App;
      ```
+    - 디렉토리 내의 모든 json파일 가져오기.
+      > npm i @types/webpack-env @types/node -D  
+      ```javascript
+      const getLocaleResource = (requireContext: __WebpackModuleApi.RequireContext) => {
+        return requireContext.keys().map(requireContext);
+        };
+
+      const localeResource = getLocaleResource(
+        require.context("../_Locale", true, /\.(json)$/)
+      );
+      ```
+     
 
 * ___React Intl VS React i18next___
   - 둘다 인지도 높은 다국어 지원 라이브러리
@@ -185,3 +197,38 @@
   - 결론
     - 번역만 사용할거면 React i18next 사용.
     - formatting까지 사용할거면 React Intl 사용.
+
+
+* ___i18next + Google Spread Sheets 번역 자동화 구축___
+  - 각각의 locale별로 번역된 데이터가 필요.
+  - 번역 테이터의 공유의 불편함.
+    - (작업자가)번역 필요 -> (번역자에게) 공유 -> (번역자가)번역 완료 -> (작업자에게) 공유
+    - 위 과정에서 번역 데이터를 메일이나 파일로 일일히 공유하고 공유받고 번거롭고 누락될 가능성이 있다.
+  - Google Spread Sheets를 활용하여, 변역데이터를 별도로 공유받지 않고, upload, download 하는 형태로 번역 데이터 공유 자동화 진행.  
+  - 필요 라이브러리
+    - npm install -D i18next-scanner
+      - i18next라이브러를 사용하여 작업된 패턴을 스캔하여 json형태로 생성.
+      - 예) {_t(Welcome.환영_합니다)}
+    - npm install -D google-spreadsheet
+      - google spreadsheet 접근 및 제어를 위해서.
+  - Goole Cloud 설정
+    - 사용자 인증 정보 > 사용자 인증 정보 만들기 > 서비스 계정 
+    - 만들어진 계정 정보에서 키추가 json파일 다운받음.
+    - 사용할 Google spreadsheet 생성 > 공유 > 새로생성한 계정 이메일 등록
+    - API 및 서비스 > 라이브러리 > Google Sheets API > 사용 클릭.(permission)
+  - 참고 소스 (https://meetup.toast.com/posts/295)
+    - i18next-scanner.config.js : App에 작성된 특정 패턴 함수를 json 파일로 추출.
+    - index.js : download, upload 를 위한 설정 내용.
+    - download.js : google spreadsheet에서 다운로드 받아서 json으로 덮어씌운다.
+    - upload.js : json내용을 google spreadsheet 에 업로드.
+  - 특이 사항.
+    - react에서 google spreadsheet 관련 코드를 사용하기 위해서 react-scipts 버전 다운.
+    - react-scripts": "^4.0.3"
+  - 사용법
+    - 터미널> npm run 
+    - package.json에 scripts에 등록.
+      ```
+      "scan:i18n": "i18next-scanner --config i18next-scanner.config.js",
+      "upload:i18n": "npm run scan:i18n && node translate/upload.js",
+      "download:i18n": "node translate/download.js"
+      ```

@@ -1,0 +1,10 @@
+{
+  "SelectLocale.언어_변경": "언어 변경",
+  "SelectLocale.한국어": "한국어",
+  "SelectLocale.영어": "영어",
+  "SelectLocale.중국어": "중국어",
+  "Welcome.선택된_언어": "선택된 언어",
+  "Welcome.환영_합니다": "{{obj}} 환영 합니다.",
+  "Welcome.오늘_날짜": "오늘 날짜",
+  "Welcome.추가_내용": "Welcome.추가_내용"
+}

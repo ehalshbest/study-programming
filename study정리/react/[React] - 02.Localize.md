@@ -211,6 +211,9 @@
       - 예) {_t(Welcome.환영_합니다)}
     - npm install -D google-spreadsheet
       - google spreadsheet 접근 및 제어를 위해서.
+    > react-i18next i18next @types/react-i18next @types/i18next i18next-scanner 
+    > npm i --save-dev @types/google-spreadsheet  
+    google-spreadsheet  
   - Goole Cloud 설정
     - 사용자 인증 정보 > 사용자 인증 정보 만들기 > 서비스 계정 
     - 만들어진 계정 정보에서 키추가 json파일 다운받음.
@@ -222,8 +225,17 @@
     - download.js : google spreadsheet에서 다운로드 받아서 json으로 덮어씌운다.
     - upload.js : json내용을 google spreadsheet 에 업로드.
   - 특이 사항.
-    - react에서 google spreadsheet 관련 코드를 사용하기 위해서 react-scipts 버전 다운.
-    - react-scripts": "^4.0.3"
+    ```
+    BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+    This is no longer the case. Verify if you need this module and configure a polyfill for it.
+    ```
+    - react에서 직접 google spreadsheet 관련 코드를 사용할때 발생하는 에러.
+    - 해결책
+      - react-scripts 버전 다운 
+        - "react-scripts": "5.0.1" > react-scripts": "^4.0.3"
+        > npm uninstall react-scripts  
+        > npm i react-scripts@4.0.3  
+    
   - 사용법
     - 터미널> npm run 
     - package.json에 scripts에 등록.

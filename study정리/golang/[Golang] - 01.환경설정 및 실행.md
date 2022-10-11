@@ -57,19 +57,19 @@
 
 * ___Go에서 Hello World! 출력해보기___
   
-    1. Visual Studio Code 를 열고 Go 확장 설치.
-      Ctrl + Shift + X > go 검색 후 Rich Go language support for Visual Studio Code 설치
-      ![캡처](_Img/go-extensions.PNG)
+    1. Visual Studio Code 를 열고 Go 확장 설치.  
+       - Ctrl + Shift + X > go 검색 후 Rich Go language support for Visual Studio Code 설치  
+        ![캡처](_Img/go-extensions.PNG)
 
-    2. 터미널을 열어서 작업폴더에 go mod를 init
+    1. 터미널을 열어서 작업폴더에 go mod를 init
        ![캡처](_Img/go-mod.PNG)
 
-    3. go 관련 tool 업데이트.
-      ![캡처](_Img/go-tool-update-1.PNG)
-      ![캡처](_Img/go-tool-update-2.PNG)
+    2. go 관련 tool 업데이트.  
+       ![캡처](_Img/go-tool-update-1.PNG)
+       ![캡처](_Img/go-tool-update-2.PNG)
 
-    4. 작업 폴더에 hello-world.go 파일 생성후 아래 코드 입력
-      ![캡처](_Img/helloworld-1.PNG)
+    3. 작업 폴더에 hello-world.go 파일 생성후 아래 코드 입력
+       ![캡처](_Img/helloworld-1.PNG)
        ```python
           package main
 
@@ -81,4 +81,4 @@
        ```
 
     5. 터미널에서 실행 ( go run 파일명 )
-      ![캡처](_Img/helloworld-2.PNG)
+       ![캡처](_Img/helloworld-2.PNG)
